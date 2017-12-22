@@ -24,7 +24,9 @@ public class MR4 {
     //private static String cache = "/user/wzy/ContentRecommend/step2_input/";
     private static String cache = "ContentRecommend/step2_input/ItemUser.txt";
     //hdfs文件地址
-    private static String hdfs = "hdfs://localhost:9000";
+    //注意要同时修改core-site.xml文件里面的fs.defaultFS(hdfs://localhost:9000) 为hdfs://master:9000
+    //private static String hdfs = "hdfs://localhost:9000";
+    private static String hdfs = "hdfs://master:9000";
 
     public static int run() {
         try {

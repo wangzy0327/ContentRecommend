@@ -19,7 +19,9 @@ public class MR1 {
     //private static String outPath = "/user/wzy/ContentRecommend/step3_output";
     private static String outPath = "ContentRecommend/step1_output";
     //hdfs文件地址
-    private static String hdfs = "hdfs://localhost:9000";
+    //注意要同时修改core-site.xml文件里面的fs.defaultFS(hdfs://localhost:9000) 为hdfs://master:9000
+    //private static String hdfs = "hdfs://localhost:9000";
+    private static String hdfs = "hdfs://master:9000";
 
     public int run() {
         try {
